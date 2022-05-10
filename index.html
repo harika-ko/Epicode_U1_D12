@@ -40,7 +40,7 @@
         </div>
 
         <div>
-            <input type="text" id="input-field" placeholder="input field for the exercise" />
+            <input type="text" id="input-field" placeholder="input field for the exercise" onkeyup="keys()" />
         </div>
     </div>
 
@@ -163,8 +163,10 @@
          Attach an event listener to the input field in the page for console logging its value just after any keystroke.
         */
 
-        const inputField = document.getElementById("input-field");
-        // ...
+        function keys() {
+            const inputField = document.getElementById("input-field");
+            console.log(inputField.value)
+        }
 
         /* EXERCISE 12
          Create a welcome alert message when the page successfully loads.
