@@ -29,7 +29,7 @@
             <li>3rd</li>
         </ul>
 
-        <a href="strive.school">This link goes to Strive School</a>
+        <a href="strive.school" target="_blank">This link goes to Strive School</a>
 
         <div>
             <p>This text is just for the exercise</p>
@@ -82,7 +82,10 @@
         */
 
         const changeUrls = function () {
-            //
+            let linksNode = document.getElementsByTagName("a")
+            for (i = 0; i < linksNode.length; i++) {
+                linksNode[i].href = "https://www.google.com"
+            }
         };
 
         /* EXERCISE 5
