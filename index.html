@@ -23,7 +23,7 @@
             <li>3rd</li>
         </ul>
 
-        <ul id="secondList">
+        <ul id="secondList" class="secondClass">
             <li>1st</li>
             <li>2nd</li>
             <li>3rd</li>
@@ -54,7 +54,8 @@
 
         const changeTitle = function (newTitle) {
             let headingNode = document.getElementById("heading1")
-            headingNode.innerText = "This is the changed Title!"
+            // headingNode.innerText = "This is the changed Title!"
+            headingNode.innerText = newTitle
         };
 
         /* EXERCISE 2
@@ -93,7 +94,12 @@
         */
 
         const addToTheSecond = function (content) {
-            //
+            let listNode = document.getElementsByClassName("secondClass")
+            let newListItem = document.createElement("li")
+            newListItem.innerText = content
+            for (i = 0; i < listNode.length; i++) {
+                listNode[i].appendChild(newListItem)
+            }
         };
 
         /* EXERCISE 6
