@@ -31,7 +31,7 @@
 
         <a href="strive.school" target="_blank">This link goes to Strive School</a>
 
-        <div>
+        <div id="para">
             <p>This text is just for the exercise</p>
         </div>
 
@@ -107,7 +107,10 @@
         */
 
         const addParagraph = function (content) {
-            //
+            let divNode = document.getElementById("para")
+            let newPara = document.createElement("p")
+            newPara.innerText = content
+            divNode.appendChild(newPara)
         };
 
         /* EXERCISE 7
