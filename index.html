@@ -71,7 +71,10 @@
         */
 
         const changePcontent = function () {
-            //
+            let textNode = document.querySelectorAll("div p")
+            for (let i = 0; i < textNode.length; i++) {
+                textNode[i].innerText = "Changed the text"
+            }
         };
 
         /* EXERCISE 4
