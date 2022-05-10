@@ -5,12 +5,16 @@
         .myHeading {
             color: red;
         }
+
+        #heading1 {
+            cursor: pointer;
+        }
     </style>
 </head>
 
 <body>
     <div>
-        <h1 id="heading1">This is the title of the page</h1>
+        <h1 id="heading1" onclick="makeItClickable(event)">This is the title of the page</h1>
         <h2>This is the subtitle of the page</h2>
     </div>
 
@@ -139,7 +143,8 @@
         */
 
         const makeItClickable = function () {
-            //
+            let heading1Node = document.getElementById("heading1")
+            heading1Node.classList.toggle("myHeading")
         };
 
         /* EXERCISE 10
