@@ -128,7 +128,10 @@
         */
 
         const paintItGreen = function () {
-            //
+            let unoList = document.querySelectorAll("ul")
+            for (i = 0; i < unoList.length; i++) {
+                unoList[i].style.backgroundColor = "green"
+            }
         };
 
         /* EXERCISE 9
