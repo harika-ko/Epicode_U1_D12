@@ -46,6 +46,7 @@
 
     <div>
         <p>And this text is just for the exercise too!</p>
+        <footer>This is the footer text</footer>
         <h2 style="color: red">
             Save this page on your computer and open it with VSCode to get the
             questions!
@@ -152,7 +153,10 @@
         */
 
         const changeFooterText = function () {
-            //
+            let footerText = document.querySelector("footer")
+            footerText.addEventListener("click", function (e) {
+                footerText.innerText = "Changed the footer"
+            })
         };
 
         /* EXERCISE 11
@@ -167,7 +171,7 @@
         */
 
         window.onload = function () {
-            //
+            alert("Welcome to the page")
         };
 
         /* EXERCISE 13
